@@ -1,5 +1,7 @@
+
 var fs = require('fs');
-var fileCOntent = fs.readFile('index.html',encoding);
+var fil = fs.readFileSync('index.html');
+var str = fil.toString();
 var express = require('express');
 var app = express();
 app.use(express.logger());
